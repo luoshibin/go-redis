@@ -2,13 +2,13 @@ module github.com/redis/go-redis/extra/redisotel/v9
 
 go 1.25.0
 
-replace github.com/redis/go-redis/v9 => ../..
+replace github.com/luoshibin/go-redis/v9 => ../..
 
 replace github.com/redis/go-redis/extra/rediscmd/v9 => ../rediscmd
 
 require (
 	github.com/redis/go-redis/extra/rediscmd/v9 v9.18.0
-	github.com/redis/go-redis/v9 v9.18.0
+	github.com/luoshibin/go-redis/v9 v9.18.0
 	go.opentelemetry.io/otel v1.43.0
 	go.opentelemetry.io/otel/metric v1.43.0
 	go.opentelemetry.io/otel/sdk v1.43.0

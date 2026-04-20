@@ -95,7 +95,7 @@ Binary data digest: 0x1122334455667788
 Redis uses the **xxh3** hashing algorithm. The go-redis library provides built-in helper functions to calculate digests client-side:
 
 ```go
-import "github.com/redis/go-redis/v9/helper"
+import "github.com/luoshibin/go-redis/v9/helper"
 
 // For strings
 digest := helper.DigestString("myvalue")
@@ -124,7 +124,7 @@ if result.Err() == redis.Nil {
 ### Client-Side Digest (No Extra Round Trip)
 
 ```go
-import "github.com/redis/go-redis/v9/helper"
+import "github.com/luoshibin/go-redis/v9/helper"
 
 // If you know the expected current value, calculate digest client-side
 expectedValue := "100"
@@ -154,7 +154,7 @@ if rdb.SetIFDEQ(ctx, "counter", newValue, currentDigest, 0).Err() == redis.Nil {
 ### 2. Session Management
 
 ```go
-import "github.com/redis/go-redis/v9/helper"
+import "github.com/luoshibin/go-redis/v9/helper"
 
 // Delete session only if it contains expected data
 sessionData := "user:1234:active"
@@ -169,7 +169,7 @@ deleted := rdb.DelExArgs(ctx, "session:xyz", redis.DelExArgs{
 ### 3. Configuration Updates
 
 ```go
-import "github.com/redis/go-redis/v9/helper"
+import "github.com/luoshibin/go-redis/v9/helper"
 
 // Update config only if it changed
 oldConfig := loadOldConfig()
@@ -199,7 +199,7 @@ if result.Err() != redis.Nil {
 
 ## Helper Functions Reference
 
-The `github.com/redis/go-redis/v9/helper` package provides:
+The `github.com/luoshibin/go-redis/v9/helper` package provides:
 
 | Function | Description |
 |----------|-------------|

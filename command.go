@@ -15,8 +15,8 @@ import (
 
 	"github.com/redis/go-redis/v9/internal"
 	"github.com/redis/go-redis/v9/internal/hscan"
-	"github.com/redis/go-redis/v9/internal/proto"
-	"github.com/redis/go-redis/v9/internal/routing"
+	"github.com/luoshibin/go-redis/v9/internal/proto"
+	"github.com/luoshibin/go-redis/v9/internal/routing"
 	"github.com/redis/go-redis/v9/internal/util"
 )
 

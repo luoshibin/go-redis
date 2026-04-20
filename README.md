@@ -1,9 +1,9 @@
 # Redis client for Go
 
 [![build workflow](https://github.com/redis/go-redis/actions/workflows/build.yml/badge.svg)](https://github.com/redis/go-redis/actions)
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/redis/go-redis/v9)](https://pkg.go.dev/github.com/redis/go-redis/v9?tab=doc)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/luoshibin/go-redis/v9)](https://pkg.go.dev/github.com/luoshibin/go-redis/v9?tab=doc)
 [![Documentation](https://img.shields.io/badge/redis-documentation-informational)](https://redis.io/docs/latest/develop/clients/go/)
-[![Go Report Card](https://goreportcard.com/badge/github.com/redis/go-redis/v9)](https://goreportcard.com/report/github.com/redis/go-redis/v9)
+[![Go Report Card](https://goreportcard.com/badge/github.com/luoshibin/go-redis/v9)](https://goreportcard.com/report/github.com/luoshibin/go-redis/v9)
 [![codecov](https://codecov.io/github/redis/go-redis/graph/badge.svg?token=tsrCZKuSSw)](https://codecov.io/github/redis/go-redis)
 
 [![Discord](https://img.shields.io/discord/697882427875393627.svg?style=social&logo=discord)](https://discord.gg/W4txy5AeKM)
@@ -46,8 +46,8 @@ Please do refer to the documentation and the tests if you experience any issues.
 
 - [Discussions](https://github.com/redis/go-redis/discussions)
 - [Chat](https://discord.gg/W4txy5AeKM)
-- [Reference](https://pkg.go.dev/github.com/redis/go-redis/v9)
-- [Examples](https://pkg.go.dev/github.com/redis/go-redis/v9#pkg-examples)
+- [Reference](https://pkg.go.dev/github.com/luoshibin/go-redis/v9)
+- [Examples](https://pkg.go.dev/github.com/luoshibin/go-redis/v9#pkg-examples)
 
 ## old documentation
 
@@ -88,7 +88,7 @@ go mod init github.com/my/repo
 Then install go-redis/**v9**:
 
 ```shell
-go get github.com/redis/go-redis/v9
+go get github.com/luoshibin/go-redis/v9
 ```
 
 ## Quickstart
@@ -98,7 +98,7 @@ import (
     "context"
     "fmt"
 
-    "github.com/redis/go-redis/v9"
+    "github.com/luoshibin/go-redis/v9"
 )
 
 var ctx = context.Background()
@@ -195,7 +195,7 @@ rdb := redis.NewClient(&redis.Options{
 Example with Entra ID:
 ```go
 import (
-    "github.com/redis/go-redis/v9"
+    "github.com/luoshibin/go-redis/v9"
     "github.com/redis/go-redis-entraid"
 )
 
@@ -284,7 +284,7 @@ to this specification.
 
 ```go
 import (
-    "github.com/redis/go-redis/v9"
+    "github.com/luoshibin/go-redis/v9"
 )
 
 func ExampleClient() *redis.Client {
@@ -303,7 +303,7 @@ func ExampleClient() *redis.Client {
 
 ```go
 import (
-    "github.com/redis/go-redis/v9"
+    "github.com/luoshibin/go-redis/v9"
     "github.com/redis/go-redis/extra/redisotel/v9"
     "errors"
 )
