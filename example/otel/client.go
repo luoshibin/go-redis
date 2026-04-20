@@ -12,8 +12,8 @@ import (
 
 	"github.com/uptrace/uptrace-go/uptrace"
 
+	"github.com/luoshibin/go-redis/v9"
 	"github.com/redis/go-redis/extra/redisotel/v9"
-	"github.com/redis/go-redis/v9"
 )
 
 var tracer = otel.Tracer("github.com/redis/go-redis/example/otel")

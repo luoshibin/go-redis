@@ -6,9 +6,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/redis/go-redis/v9/auth"
-	"github.com/redis/go-redis/v9/maintnotifications"
-	"github.com/redis/go-redis/v9/push"
+	"github.com/luoshibin/go-redis/v9/auth"
+	"github.com/luoshibin/go-redis/v9/maintnotifications"
+	"github.com/luoshibin/go-redis/v9/push"
 )
 
 // UniversalOptions information is required by UniversalClient to establish

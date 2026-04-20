@@ -3,7 +3,7 @@ package redis
 import (
 	"context"
 
-	"github.com/redis/go-redis/v9/internal/hashtag"
+	"github.com/luoshibin/go-redis/v9/internal/hashtag"
 )
 
 // SetCmdable is an interface for Redis set commands.

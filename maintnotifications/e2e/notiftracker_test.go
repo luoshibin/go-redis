@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/internal/pool"
-	"github.com/redis/go-redis/v9/maintnotifications"
-	"github.com/redis/go-redis/v9/push"
+	"github.com/luoshibin/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9/internal/pool"
+	"github.com/luoshibin/go-redis/v9/maintnotifications"
+	"github.com/luoshibin/go-redis/v9/push"
 )
 
 // DiagnosticsEvent represents a notification event

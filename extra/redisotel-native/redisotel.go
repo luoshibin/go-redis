@@ -12,7 +12,7 @@ import (
 	"go.opentelemetry.io/otel/metric"
 	"go.opentelemetry.io/otel/semconv/v1.38.0/dbconv"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9"
 )
 
 // Metric name constants

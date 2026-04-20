@@ -9,15 +9,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/redis/go-redis/v9/auth"
-	"github.com/redis/go-redis/v9/internal"
-	"github.com/redis/go-redis/v9/internal/auth/streaming"
-	"github.com/redis/go-redis/v9/internal/hscan"
-	"github.com/redis/go-redis/v9/internal/otel"
-	"github.com/redis/go-redis/v9/internal/pool"
-	"github.com/redis/go-redis/v9/internal/proto"
-	"github.com/redis/go-redis/v9/maintnotifications"
-	"github.com/redis/go-redis/v9/push"
+	"github.com/luoshibin/go-redis/v9/auth"
+	"github.com/luoshibin/go-redis/v9/internal"
+	"github.com/luoshibin/go-redis/v9/internal/auth/streaming"
+	"github.com/luoshibin/go-redis/v9/internal/hscan"
+	"github.com/luoshibin/go-redis/v9/internal/otel"
+	"github.com/luoshibin/go-redis/v9/internal/pool"
+	"github.com/luoshibin/go-redis/v9/internal/proto"
+	"github.com/luoshibin/go-redis/v9/maintnotifications"
+	"github.com/luoshibin/go-redis/v9/push"
 )
 
 // Scanner internal/hscan.Scanner exposed interface.

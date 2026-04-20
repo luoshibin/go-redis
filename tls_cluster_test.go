@@ -9,7 +9,7 @@ import (
 
 	. "github.com/bsm/ginkgo/v2"
 	. "github.com/bsm/gomega"
-	"github.com/redis/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9"
 )
 
 var _ = Describe("TLS Cluster", Label("NonRedisEnterprise"), func() {
@@ -280,4 +280,3 @@ var _ = Describe("TLS Cluster", Label("NonRedisEnterprise"), func() {
 		})
 	})
 })
-

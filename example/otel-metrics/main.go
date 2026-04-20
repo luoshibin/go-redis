@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/luoshibin/go-redis/v9"
 	redisotel "github.com/redis/go-redis/extra/redisotel-native/v9"
-	"github.com/redis/go-redis/v9"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/exporters/otlp/otlpmetric/otlpmetricgrpc"
 	"go.opentelemetry.io/otel/sdk/metric"

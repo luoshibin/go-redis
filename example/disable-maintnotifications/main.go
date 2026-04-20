@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/maintnotifications"
+	"github.com/luoshibin/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9/maintnotifications"
 )
 
 func main() {

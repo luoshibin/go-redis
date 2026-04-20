@@ -6,8 +6,8 @@ import (
 
 	. "github.com/bsm/ginkgo/v2"
 	. "github.com/bsm/gomega"
-	"github.com/redis/go-redis/v9"
-	"github.com/redis/go-redis/v9/internal/proto"
+	"github.com/luoshibin/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9/internal/proto"
 )
 
 type testTimeout struct {
@@ -40,14 +40,14 @@ var _ = Describe("error", func() {
 			context.DeadlineExceeded: false,
 			redis.ErrPoolTimeout:     true,
 			// Use typed errors instead of plain errors.New()
-			proto.ParseErrorReply([]byte("-ERR max number of clients reached")):                      true,
-			proto.ParseErrorReply([]byte("-LOADING Redis is loading the dataset in memory")):         true,
-			proto.ParseErrorReply([]byte("-READONLY You can't write against a read only replica")):                                                                                      true,
+			proto.ParseErrorReply([]byte("-ERR max number of clients reached")):                                                                                   true,
+			proto.ParseErrorReply([]byte("-LOADING Redis is loading the dataset in memory")):                                                                      true,
+			proto.ParseErrorReply([]byte("-READONLY You can't write against a read only replica")):                                                                true,
 			proto.ParseErrorReply([]byte("-ERR Error running script (call to f_abc123): @user_script:1: -READONLY You can't write against a read only replica.")): true,
-			proto.ParseErrorReply([]byte("-CLUSTERDOWN The cluster is down")):                        true,
-			proto.ParseErrorReply([]byte("-TRYAGAIN Command cannot be processed, please try again")): true,
-			proto.ParseErrorReply([]byte("-NOREPLICAS Not enough good replicas to write")):           true,
-			proto.ParseErrorReply([]byte("-ERR other")):                                              false,
+			proto.ParseErrorReply([]byte("-CLUSTERDOWN The cluster is down")):                                                                                     true,
+			proto.ParseErrorReply([]byte("-TRYAGAIN Command cannot be processed, please try again")):                                                              true,
+			proto.ParseErrorReply([]byte("-NOREPLICAS Not enough good replicas to write")):                                                                        true,
+			proto.ParseErrorReply([]byte("-ERR other")):                                                                                                           false,
 		}
 
 		for err, expected := range data {

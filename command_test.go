@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9"
 
 	. "github.com/bsm/ginkgo/v2"
 	. "github.com/bsm/gomega"

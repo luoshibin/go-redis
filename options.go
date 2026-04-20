@@ -15,12 +15,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/redis/go-redis/v9/auth"
-	"github.com/redis/go-redis/v9/internal/pool"
-	"github.com/redis/go-redis/v9/internal/proto"
-	"github.com/redis/go-redis/v9/internal/util"
-	"github.com/redis/go-redis/v9/maintnotifications"
-	"github.com/redis/go-redis/v9/push"
+	"github.com/luoshibin/go-redis/v9/auth"
+	"github.com/luoshibin/go-redis/v9/internal/pool"
+	"github.com/luoshibin/go-redis/v9/internal/proto"
+	"github.com/luoshibin/go-redis/v9/internal/util"
+	"github.com/luoshibin/go-redis/v9/maintnotifications"
+	"github.com/luoshibin/go-redis/v9/push"
 )
 
 // poolIDCounter is a global auto-increment counter for generating unique pool IDs.

@@ -9,7 +9,7 @@ import (
 
 	. "github.com/bsm/ginkgo/v2"
 	. "github.com/bsm/gomega"
-	"github.com/redis/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9"
 )
 
 // loadTLSConfig loads TLS certificates from the docker test environment
@@ -33,9 +33,9 @@ func loadTLSConfig(certDir string) (*tls.Config, error) {
 	}
 
 	return &tls.Config{
-		RootCAs:      caCertPool,
-		Certificates: []tls.Certificate{cert},
-		ServerName:   "localhost",
+		RootCAs:            caCertPool,
+		Certificates:       []tls.Certificate{cert},
+		ServerName:         "localhost",
 		InsecureSkipVerify: true,
 	}, nil
 }
@@ -247,11 +247,11 @@ var _ = Describe("TLS", Label("NonRedisEnterprise"), func() {
 		It("should respect MinVersion setting", func() {
 			ctx := context.Background()
 			tlsConfigWithMinVersion := &tls.Config{
-				RootCAs:      tlsConfig.RootCAs,
-				Certificates: tlsConfig.Certificates,
-				ServerName:   "localhost",
-		InsecureSkipVerify: true,
-				MinVersion:   tls.VersionTLS12,
+				RootCAs:            tlsConfig.RootCAs,
+				Certificates:       tlsConfig.Certificates,
+				ServerName:         "localhost",
+				InsecureSkipVerify: true,
+				MinVersion:         tls.VersionTLS12,
 			}
 
 			client := redis.NewClient(&redis.Options{
@@ -268,10 +268,10 @@ var _ = Describe("TLS", Label("NonRedisEnterprise"), func() {
 		It("should work with custom cipher suites", func() {
 			ctx := context.Background()
 			tlsConfigWithCiphers := &tls.Config{
-				RootCAs:      tlsConfig.RootCAs,
-				Certificates: tlsConfig.Certificates,
-				ServerName:   "localhost",
-		InsecureSkipVerify: true,
+				RootCAs:            tlsConfig.RootCAs,
+				Certificates:       tlsConfig.Certificates,
+				ServerName:         "localhost",
+				InsecureSkipVerify: true,
 				CipherSuites: []uint16{
 					tls.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,
 					tls.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
@@ -290,4 +290,3 @@ var _ = Describe("TLS", Label("NonRedisEnterprise"), func() {
 		})
 	})
 })
-

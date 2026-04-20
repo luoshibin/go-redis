@@ -7,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"crypto/tls"
 	"testing"
 
-	"github.com/redis/go-redis/v9"
+	"github.com/luoshibin/go-redis/v9"
 )
 
 // TestTLSStandalone tests TLS connection to standalone Redis
@@ -74,4 +74,3 @@ func TestTLSRedissURL(t *testing.T) {
 
 	t.Log("✅ TLS rediss:// URL test passed")
 }
-

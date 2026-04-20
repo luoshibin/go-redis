@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/redis/go-redis/v9/internal/otel"
+	"github.com/luoshibin/go-redis/v9/internal/otel"
 )
 
 type StreamCmdable interface {

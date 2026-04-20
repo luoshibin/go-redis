@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/redis/go-redis/v9/internal/pool"
+	"github.com/luoshibin/go-redis/v9/internal/pool"
 )
 
 // TestInitConnNilMaintNotificationsConfig is a regression test for
