@@ -6,8 +6,8 @@ require (
 	github.com/bsm/ginkgo/v2 v2.12.0
 	github.com/bsm/gomega v1.27.10
 	github.com/cespare/xxhash/v2 v2.3.0
+	github.com/luoshibin/atomic v1.11.0
 	github.com/zeebo/xxh3 v1.1.0
-	go.uber.org/atomic v1.11.0
 )
 
 require (

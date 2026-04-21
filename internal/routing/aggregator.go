@@ -8,8 +8,8 @@ import (
 
 	"sync/atomic"
 
+	uberAtomic "github.com/luoshibin/atomic"
 	"github.com/luoshibin/go-redis/v9/internal/util"
-	uberAtomic "go.uber.org/atomic"
 )
 
 var (

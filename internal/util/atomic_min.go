@@ -11,7 +11,7 @@ Adapted from the modified atomic_max, but with inverted logic
 import (
 	"math"
 
-	"go.uber.org/atomic"
+	"github.com/luoshibin/atomic"
 )
 
 // AtomicMin is a thread-safe Min container

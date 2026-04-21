@@ -11,7 +11,7 @@ package util
 import (
 	"math"
 
-	"go.uber.org/atomic"
+	"github.com/luoshibin/atomic"
 )
 
 // AtomicMax is a thread-safe max container
