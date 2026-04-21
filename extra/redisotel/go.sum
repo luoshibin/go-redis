@@ -35,8 +35,8 @@ go.opentelemetry.io/otel/sdk/metric v1.43.0 h1:S88dyqXjJkuBNLeMcVPRFXpRw2fuwdvfC
 go.opentelemetry.io/otel/sdk/metric v1.43.0/go.mod h1:C/RJtwSEJ5hzTiUz5pXF1kILHStzb9zFlIEe85bhj6A=
 go.opentelemetry.io/otel/trace v1.43.0 h1:BkNrHpup+4k4w+ZZ86CZoHHEkohws8AY+WTX09nk+3A=
 go.opentelemetry.io/otel/trace v1.43.0/go.mod h1:/QJhyVBUUswCphDVxq+8mld+AvhXZLhe+8WVFxiFff0=
-github.com/luoshibin/atomic v1.11.0 h1:SF6OJdHcFGwRBUTeDBF7TUAPlTAUBi/gfVj07ByXA4c=
-github.com/luoshibin/atomic v1.11.0/go.mod h1:i012gl3AJW4Mi3zrGO4ixS62cnRXot6pm7CJyfn2BC8=
+github.com/luoshibin/atomic v1.11.1 h1:tZ3Q5SlIxlRrDZAfJz1XN3mcLmHblBQQVSVC9wQ0G+U=
+github.com/luoshibin/atomic v1.11.1/go.mod h1:i012gl3AJW4Mi3zrGO4ixS62cnRXot6pm7CJyfn2BC8=
 go.uber.org/goleak v1.3.0 h1:2K3zAYmnTNqV73imy9J1T3WC+gmCePx2hEGkimedGto=
 go.uber.org/goleak v1.3.0/go.mod h1:CoHD4mav9JJNrW/WLlf7HGZPjdw8EucARQHekz1X6bE=
 golang.org/x/sys v0.42.0 h1:omrd2nAlyT5ESRdCLYdm3+fMfNFE/+Rf4bDIQImRJeo=
